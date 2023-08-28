@@ -1,0 +1,8 @@
+.sidebar {
+  overflow-y: hidden; /* Menghilangkan scroll vertikal */
+  overflow-x: hidden; /* Menghilangkan scroll horizontal (jika diperlukan) */
+}
+
+.cursor {
+  cursor: pointer;
+}

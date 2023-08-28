@@ -1,0 +1,109 @@
+<!-- Sidebar Start -->
+<div *ngIf="showSidebar" class="sidebar pe-4 pb-3 shadow-lg">
+  <nav class="navbar bg-light navbar-light">
+    <!-- <div class="d-flex">
+      <div class="mt-2 me-3">
+        <div id="menu-button">
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" id="menu-label" (click)="toggleSidebar()">
+            <div id="hamburger"></div>
+          </label>
+        </div>
+      </div>
+    </div> -->
+    <div
+      class="d-flex justify-content-center align-items-center ms-5 mt-4 mb-4"
+    >
+      <div class="position-relative">
+        <img
+          class="shadow-lg"
+          src="assets/img/Logo-reakaltim.jpg"
+          alt=""
+          style="width: 50px; height: 50px"
+        />
+        <div
+          class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"
+        ></div>
+      </div>
+      <div class="ms-3">
+        <h5 class="mb-0">REA Kaltim</h5>
+        <h5>Plantation</h5>
+      </div>
+    </div>
+    <div class="navbar-nav w-100">
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          ><i class="fa fa-th me-2"></i>Overview</a
+        >
+        <div class="dropdown-menu bg-transparent border-0">
+          <a routerLink="summary" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Summary</a
+          >
+        </div>
+      </div>
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          ><i class="fa fa-th me-2"></i>Request</a
+        >
+        <div class="dropdown-menu bg-transparent border-0">
+          <a routerLink="transportation" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Transportation</a
+          >
+          <a routerLink="hotel" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Hotel</a
+          >
+          <a routerLink="ticket" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Ticket</a
+          >
+        </div>
+      </div>
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          ><i class="fa fa-users me-2"></i>User</a
+        >
+        <div class="dropdown-menu bg-transparent border-0">
+          <a routerLink="management" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Management</a
+          >
+          <a routerLink="role-access" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Role Access</a
+          >
+          <a routerLink="workflow" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>Workflow</a
+          >
+        </div>
+      </div>
+      <div class="nav-item dropdown mb-3">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          ><i class="fa fa-file me-2"></i>Report</a
+        >
+        <div class="dropdown-menu bg-transparent border-0">
+          <a routerLink="" class="dropdown-item ms-3"
+            ><i class="fa-solid fa-bars-staggered me-3"></i>PDF Report</a
+          >
+        </div>
+      </div>
+
+      <hr class="ms-3" />
+
+      <div class="nav-item mb-lg-1">
+        <a routerLink="setting" class="nav-link"
+          ><i class="fa fa-gear me-2"></i>Setting</a
+        >
+      </div>
+
+      <div class="nav-item mt-lg-5">
+        <a routerLink="help" class="nav-link ms-2">Help</a>
+      </div>
+      <div class="nav-item">
+        <a routerLink="contact-us" class="nav-link ms-2">Contact Us</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link cursor" (click)="logout()"
+          ><i class="fa-solid fa-right-from-bracket me-2"></i>Log out</a
+        >
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- Sidebar End -->

@@ -1,0 +1,62 @@
+<div
+  class="login row d-flex justify-content-center align-content-center vh-100"
+>
+  <img src="favicon.ico" alt="logo" class="logo ms-4 mb-3" />
+  <h1 class="text-center">LOGIN</h1>
+  <form [formGroup]="form">
+    <div class="container col-md-4 justify-content-center">
+      <div class="form-group mb-3">
+        <label class="mb-2" for="">Username</label>
+        <input
+          class="form-control"
+          formControlName="username"
+          type="text"
+          name="username"
+          id="username"
+        />
+      </div>
+      <div class="form-group mb-3">
+        <label class="mb-2" for="">Password</label>
+        <input
+          class="form-control"
+          formControlName="password"
+          type="password"
+          name="password"
+          id="password"
+        />
+      </div>
+
+      <div class="mb-1">
+        <button
+          *ngIf="!processing && !showSuccessMessage"
+          class="btn btn-success w-100"
+          (click)="login()"
+          [disabled]="form.invalid"
+        >
+          Login
+        </button>
+        <button
+          *ngIf="processing"
+          class="btn btn-secondary w-100 processing-button"
+          [disabled]="processing"
+        >
+          Processing.. Please wait <i class="fa-solid fa-spinner fa-spin"></i>
+        </button>
+        <button
+          *ngIf="showSuccessMessage"
+          [disabled]="showSuccessMessage"
+          class="btn btn-success mb-3 w-100"
+        >
+          Login Successfully.. Redirect to Dashboard
+          <i class="fa-solid fa-spinner fa-spin"></i>
+        </button>
+      </div>
+
+      <div class="mb-3">
+        <button class="btn btn-outline-secondary w-100">
+          Forgot Password..?
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

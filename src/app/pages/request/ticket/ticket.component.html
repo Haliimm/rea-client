@@ -1,0 +1,214 @@
+<div class="">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card rounded-0">
+          <div class="card-body background">
+            <div class="d-flex">
+              <a href="">Home /</a>
+              <a class="ms-1">Request /</a>
+              <a class="ms-1 text-dark">Ticket</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container p-3">
+    <div class="col-md-12">
+      <div class="card circle shadow">
+        <div class="card-body body-table">
+          <div class="d-flex justify-content-between p-3">
+            <div>
+              <button
+                type="button"
+                class="btn btn-success rounded-pill"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <i class="fa-solid fa-plus me-2"></i>Add Ticket
+              </button>
+            </div>
+            <div class="d-flex">
+              <div class="input-group">
+                <select class="form-select rounded-pill">
+                  <option selected>Export data</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="input-group ms-3 me-3">
+                <select class="form-select rounded-pill">
+                  <option selected>Short by:ID</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+  
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Request</th>
+                      <th scope="col">Category</th>
+                      <th scope="col">Priority</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Date</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">39842-231</th>
+                      <td>Ticket Pesawat</td>
+                      <td>Ticket</td>
+                      <td>Hight</td>
+                      <td>Open</td>
+                      <td>20 Agust, 2023</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <nav
+                  aria-label="..."
+                  class="mt-5 d-flex justify-content-center align-content-center"
+                >
+                  <ul class="pagination pagination">
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link bg-success">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">...</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">20</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            Add New Request
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mb-4">Request Details</h5>
+          <div class="col-md-8">
+            <div class="form-group mb-3">
+              <label for="" class="form-label">Request Task</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <label for="" class="form-label">Category</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="formFile" class="form-label"
+                >Attachment</label
+              >
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+  
+            <div class="form-group mb-3">
+              <label for="" class="form-label">Priority</label>
+              <div class="d-flex">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    High
+                  </label>
+                </div>
+                <div class="form-check ms-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Medium
+                  </label>
+                </div>
+                <div class="form-check ms-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Low
+                  </label>
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="" class="form-label">Status</label>
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+            Cancel Request
+          </button>
+          <button type="button" class="btn btn-success">Add Request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

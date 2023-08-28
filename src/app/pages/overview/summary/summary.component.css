@@ -1,0 +1,21 @@
+.rounded-card {
+  border-radius: 30px;
+  border: none;
+  height: 200px;
+  background-color: #f0f0f0;
+}
+
+.round {
+  border-radius: 15px !important;
+  border: none !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #f0f0f0;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.margin {
+  margin-left: 160px;
+}

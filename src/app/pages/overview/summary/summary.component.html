@@ -1,0 +1,99 @@
+<div class="container ms-5 mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card rounded-card shadow">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="ms-2 mt-2 me-3 bg-success round">
+              <i class="fa-solid fa-clipboard-list fa-2xl text-white"></i>
+            </div>
+            <h5 class="mt-2">Total</h5>
+            <i class="fa-solid fa-chevron-right mt-3 margin"></i>
+          </div>
+          <h4 class="ms-2 mt-4">731 Request</h4>
+          <div class="d-flex ms-2 mt-3">
+            <i class="fa-solid fa-arrow-trend-up mt-1"></i>
+            <span class="ms-1">+15.6%</span>
+            <span class="ms-5">+1.4k this week</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card rounded-card shadow">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="ms-2 mt-2 me-3 bg-success round">
+              <i class="fa-solid fa-user fa-2xl text-white"></i>
+            </div>
+            <h5 class="mt-2">Visitor</h5>
+            <i class="fa-solid fa-chevron-right mt-3 margin"></i>
+          </div>
+          <h4 class="ms-2 mt-4">12,302</h4>
+          <div class="d-flex ms-2 mt-3">
+            <i class="fa-solid fa-arrow-trend-up mt-1"></i>
+            <span class="ms-1">+12.7%</span>
+            <span class="ms-5">+1.2k this week</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card rounded-card shadow">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="ms-2 mt-2 me-3 bg-success round">
+              <i class="fa-solid fa-check fa-2xl text-white"></i>
+            </div>
+            <h5 class="mt-2">Approval</h5>
+            <i class="fa-solid fa-chevron-right mt-3 ms-5"></i>
+          </div>
+          <h4 class="ms-2 mt-4">12,302</h4>
+          <div class="d-flex ms-2 mt-3">
+            <i class="fa-solid fa-arrow-trend-up mt-1"></i>
+            <span class="ms-1">+12.7%</span>
+            <span class="ms-5">-213</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container ms-5 mt-4">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card rounded-card shadow h-100">
+        <div class="card-body">
+          <h5>Request Performance</h5>
+          <canvas
+            baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            type="line"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card rounded-card shadow h-75">
+        <div class="card-body">
+          <h5>Top Categories</h5>
+          <canvas
+            baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            type="doughnut"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
